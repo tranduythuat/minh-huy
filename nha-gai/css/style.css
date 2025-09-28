@@ -388,6 +388,7 @@ header {
     letter-spacing: 1.4px;
     line-height: 1;
     margin: 5px 0;
+    text-transform: uppercase;
 }
 
 /* RSVP Section */
