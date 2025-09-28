@@ -47,7 +47,6 @@
 }
 
 body {
-    font-family: '1FTVRoashe', sans-serif;
     font-weight: normal;
     background-color: #f5f5f5;
     display: flex;
@@ -58,6 +57,7 @@ body {
 }
 
 .container {
+    font-family: '1FTVRoashe', sans-serif;
     max-width: 480px;
     width: 100%;
     background-color: var(--background-color);
@@ -441,7 +441,7 @@ header {
     font-family: "SVN-GothamLight", sans-serif;
     padding: 7px 25px;
     border: 1px solid #333;
-    background-color: transparent;
+    background-color: #fff;
     color: #333;
     font-size: 11px;
     font-weight: bold;
@@ -469,8 +469,7 @@ header {
     height: 100px;
     padding: 15px;
     border: 1px solid var(--primary-color);
-    /* background-color: var(--background-color); */
-    background-color: transparent;
+    background-color: #fff;
     font-size: 12px;
     color: #333;
     margin-bottom: 10px;
@@ -485,7 +484,7 @@ header {
     padding: 7px;
     margin-bottom: 10px;
     border: 1px solid var(--primary-color);
-    background-color: transparent;
+    background-color: #fff;
     font-size: 12px;
     color: #333;
     border-radius: 15px;
