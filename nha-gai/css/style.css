@@ -33,7 +33,7 @@
 
 :root{
     --background-color: #eae8e3ff;
-    --primary-color: #383535;
+    --primary-color: black;
     --secondary-color: #F8F3ED;
     --font-gotham: 'SVN-Gotham';
     --font-mtd: 'MTD Doppelganger Display';
@@ -77,7 +77,7 @@ header {
     font-weight: bold;
     letter-spacing: 1.4px;
     line-height: 1.6;
-    color: var(--primary-color);
+    color: black;
 }
 
 /* Names Section */
@@ -92,9 +92,9 @@ header {
 
 .names h1 {
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1;
-    color: #333;
+    color: var(--primary-color);
     margin: 10px 0;
     position: relative;
 }
@@ -115,7 +115,7 @@ header {
     display: block;
     height: 1px;
     width: 65px;
-    background-color:rgb(51 51 51);
+    background-color:var(--primary-color);
     overflow: hidden;
 }
 
@@ -159,7 +159,7 @@ header {
 .main-photo .photo-overlay .number p {
     font-family: "DFVN-CatchyMager-Regular", sans-serif;
     font-size: 58px;
-    font-weight: bold;
+    font-weight: 600;
     width: 50%;
     padding: 0 5px;
     height: 65px;
@@ -174,70 +174,70 @@ header {
     position: absolute;
     transform: rotate(-90deg);
     color: white;
+    font-weight: 500;
     font-size: 10px;
     bottom: 95px;
     right: -40px;
-    font-weight: 400;
 }
 
 /* Wedding Info */
 .wedding-info {
     text-transform: lowercase;
     text-align: right;
-    padding: 30px 20px;
+    padding: 30px 20px 10px 20px;
 }
 
 .wedding-info .date-text {
-    font-size: 11px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 1.4px;
-    color: #383535;
-    margin: 5px 0;
+    color: var(--primary-color);
 }
 
 /* Save the Date */
 .save-date {
     text-align: center;
-    padding: 60px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
 }
 
 .save-date h2 {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #383535;
-    padding-bottom: 20px;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    padding-bottom: 10px;
 }
 
 /* Venue Section */
 .venue {
     text-align: center;
-    padding: 25px 20px;
+    padding: 5px 20px;
 }
 
 .venue .venue-description {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--primary-color);
     margin: 5px 0;
+    line-height: 0.8;
 }
 .venue .venue-description strong {
     font-family: "SVN-GothamBold", sans-serif;
 }
 
 .venue .venue-name {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 55px;
+    font-weight: 500;
     letter-spacing: 2px;
-    color: #333;
-    margin: 30px 0 20px;
+    color: black;
+    margin: 30px 0 0px;
 }
 
 .venue .venue-address {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--primary-color);
     line-height: 1.6;
     padding: 0 30px 15px 30px;
@@ -272,15 +272,15 @@ header {
 .venue .date-box .text-date {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .venue .event-date {
     font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #333;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary-color);
     margin-bottom: 25px;
 }
 
@@ -290,34 +290,35 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /* display: flex; */
-    /* flex-direction: column; */
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 5px;
 }
 
 .timeline h2 {
     font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #333;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--primary-color);
     margin-bottom: 50px;
 }
 
 .timeline .timeline-items {
     position: relative;
     margin-top: 40px;
-    padding: 0 40px;
-}
-
-.timeline-items .timeline-item:nth-child(2) {
-    justify-content: end;
+    padding: 0 20px;
 }
 
 .timeline .timeline-items .timeline-item {
     display: flex;
     align-items: center;
     padding: 5px 0;
+}
+
+.timeline-items .timeline-item:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+    padding-right: 20px;
 }
 
 .timeline .timeline-items .timeline-item div {
@@ -338,22 +339,25 @@ header {
 
 .time-text {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.time-text p {
+    line-height: 1.2;
+}
+
 /* Photo Gallery */
 .photo-gallery {
-    padding: 150px 40px 30px 40px;
+    padding: 50px 10px 20px;
 }
 
 .photo-gallery .text-title {
     font-size: 11px;
     font-weight: bold;
-    margin-left: 10px;
     letter-spacing: 1.2px;
     padding-bottom: 10px;
 }
@@ -375,13 +379,14 @@ header {
 /* Quote Section */
 .quote {
     text-align: right;
-    padding: 0 45px;
+    padding: 0 10px;
 }
 
 .quote p {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1.4px;
+    line-height: 1;
     margin: 5px 0;
 }
 
@@ -392,7 +397,11 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 40px 45px;
+    padding: 40px 10px;
+}
+
+.rsvp form {
+    padding: 0 40px;
 }
 
 .rsvp .img-style {
@@ -406,9 +415,9 @@ header {
 .rsvp .rsvp-text {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--primary-color);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: 1.6;
 }
 
@@ -420,7 +429,7 @@ header {
     display: flex;
     gap: 15px;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .rsvp-buttons input[type="radio"] {
@@ -451,7 +460,7 @@ header {
 }
 
 .message-section {
-    margin: 30px 0;
+    margin: 5px 0;
 }
 
 .message-section textarea {
@@ -463,7 +472,7 @@ header {
     background-color: transparent;
     font-size: 12px;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 15px;
     resize: none;
     font-family: "SVN-GothamLight", sans-serif;
@@ -473,7 +482,7 @@ header {
 .message-section input {
     width: 100%;
     padding: 7px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid var(--primary-color);
     background-color: transparent;
     font-size: 12px;
@@ -502,6 +511,7 @@ header {
 
 .end-text {
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .final-note {
