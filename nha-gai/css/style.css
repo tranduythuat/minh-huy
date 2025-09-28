@@ -74,9 +74,10 @@ header {
 
 .intro-text {
     font-size: 11px;
-    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
     line-height: 1.6;
-    color: #666;
+    color: var(--primary-color);
 }
 
 /* Names Section */
@@ -91,7 +92,7 @@ header {
 
 .names h1 {
     font-size: 70px;
-    font-weight: 300;
+    font-weight: bold;
     line-height: 1;
     color: #333;
     margin: 10px 0;
@@ -151,7 +152,6 @@ header {
 .main-photo .photo-overlay .number {
     display: flex;
     width: 80px;
-    font-weight: 300;
     color: white;
     z-index: 100;
 }
@@ -159,7 +159,7 @@ header {
 .main-photo .photo-overlay .number p {
     font-family: "DFVN-CatchyMager-Regular", sans-serif;
     font-size: 58px;
-    font-weight: 300;
+    font-weight: bold;
     width: 50%;
     padding: 0 5px;
     height: 65px;
@@ -167,6 +167,7 @@ header {
 
 .main-photo .photo-overlay .number p:first-child {
     text-align: right;
+    color: var(--primary-color);
 }
 
 .main-photo .text-overlay {
@@ -188,7 +189,8 @@ header {
 
 .wedding-info .date-text {
     font-size: 11px;
-    letter-spacing: 1px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
     color: #383535;
     margin: 5px 0;
 }
@@ -201,7 +203,7 @@ header {
 
 .save-date h2 {
     font-size: 32px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 3px;
     color: #383535;
     padding-bottom: 20px;
@@ -216,8 +218,8 @@ header {
 .venue .venue-description {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    font-weight: normal;
-    color: #666;
+    font-weight: bold;
+    color: var(--primary-color);
     margin: 5px 0;
 }
 .venue .venue-description strong {
@@ -225,8 +227,8 @@ header {
 }
 
 .venue .venue-name {
-    font-size: 55px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: bold;
     letter-spacing: 2px;
     color: #333;
     margin: 30px 0 20px;
@@ -235,7 +237,8 @@ header {
 .venue .venue-address {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    color: #666;
+    font-weight: bold;
+    color: var(--primary-color);
     line-height: 1.6;
     padding: 0 30px 15px 30px;
     letter-spacing: 0.5px;
@@ -269,12 +272,13 @@ header {
 .venue .date-box .text-date {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .venue .event-date {
     font-size: 48px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 2px;
     color: #333;
     margin-bottom: 25px;
@@ -294,7 +298,7 @@ header {
 
 .timeline h2 {
     font-size: 50px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 3px;
     color: #333;
     margin-bottom: 50px;
@@ -334,6 +338,7 @@ header {
 
 .time-text {
     font-size: 15px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,6 +352,7 @@ header {
 
 .photo-gallery .text-title {
     font-size: 11px;
+    font-weight: bold;
     margin-left: 10px;
     letter-spacing: 1.2px;
     padding-bottom: 10px;
@@ -374,7 +380,8 @@ header {
 
 .quote p {
     font-size: 11px;
-    letter-spacing: 1.2px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
     margin: 5px 0;
 }
 
@@ -399,7 +406,8 @@ header {
 .rsvp .rsvp-text {
     font-family: "SVN-GothamLight", sans-serif;
     font-size: 10px;
-    color: #666;
+    font-weight: bold;
+    color: var(--primary-color);
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -426,6 +434,7 @@ header {
     background-color: transparent;
     color: #333;
     font-size: 11px;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;
@@ -497,14 +506,14 @@ header {
 .final-note {
     font-size: 11px;
     letter-spacing: 1px;
-    color: #666;
+    color: var(--primary-color);
     line-height: 1.6;
     font-style: italic;
     text-align: left;
 }
 
 ::placeholder {
-    color: #999;
+    color: #444444;
     font-style: italic;
 }
 
